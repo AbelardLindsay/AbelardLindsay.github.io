@@ -24,7 +24,7 @@
   </style>
 </head>
 <body>
-  <inline div id="datetime">--</div><inline div class="timezone">UTC</div>
+  <inline div id="datetime">--</div>
   
 
   <script>
@@ -41,7 +41,7 @@
         hour12: false,
         timeZone: 'UTC'
       };
-      const formatted = new Intl.DateTimeFormat('en-GB', options).format(now);
+      const formatted = new Intl.DateTimeFormat('en-GB', options).format(now) + ' UTC';
       document.getElementById("datetime").textContent = formatted;
     }
 
