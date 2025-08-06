@@ -7,25 +7,25 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color:rgb(239, 237, 237);
+      background-color:rgb(255, 255, 255);
       color:rgb(27, 27, 27);
       text-align: center;
-      padding-top: 10%;
+      padding-top: 20%;
     }
     #datetime {
-      font-size: 2rem;
+      font-size: 1rem;
       font-weight: bold;
     }
     .timezone {
-      margin-top: 10px;
-      font-size: 2rem;
+      font-size: 1rem;
       color:rgb(27, 27, 27);
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div id="datetime">--</div>
-  <div class="timezone">UTC</div>
+  <inline div id="datetime">--</div><inline div class="timezone">UTC</div>
+  
 
   <script>
     function updateClock() {
